@@ -1,0 +1,113 @@
+
+F:\aisinoInHome\test\sonar>cd .. 
+
+F:\aisinoInHome\test>mvn sonar:sonar -Dsonar.host.url=http://127.0.0.1:9000 -Dsonar.login=9447572c2a9c0f88e05ce4272f9cc92b96dc1f58 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for test:test:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 22, column 17
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 30, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -----------------------------< test:test >------------------------------
+[INFO] Building test 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.7.0.1746:sonar (default-cli) @ test ---
+[INFO] User cache: C:\Users\Administrator\.sonar\cache
+[INFO] SonarQube version: 7.4.0
+[INFO] Default locale: "zh_CN", source code encoding: "GBK" (analysis is platform dependent)
+[INFO] Publish mode
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=68ms
+[INFO] Server id: 49B321BC-AXCaDCJ4jR0fbAuTiTqh
+[INFO] User cache: C:\Users\Administrator\.sonar\cache
+[INFO] Load/download plugins
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=41ms
+[INFO] Load/download plugins (done) | time=61ms
+[INFO] Loaded core extensions: 
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=74ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=47ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=741ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=17ms
+[WARNING] SCM provider autodetection failed. Please use "sonar.scm.provider" to define SCM of your project, or disable the SCM Sensor in the project settings.
+[INFO] Project key: test:test
+[INFO] Project base dir: F:\aisinoInHome\test
+[INFO] -------------  Scan test
+[INFO] Base dir: F:\aisinoInHome\test
+[INFO] Working dir: F:\aisinoInHome\test\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: GBK, default locale: zh_CN
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=80ms
+[INFO] Index files
+[INFO] 5 files indexed
+[INFO] Quality profile for java: p3c
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[WARNING] Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+[INFO] JavaClasspath initialization (done) | time=9ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=0ms
+[INFO] Java Main Files AST scan
+[INFO] 2 source files to be analyzed
+[INFO] Java Main Files AST scan (done) | time=570ms
+[INFO] Java Test Files AST scan
+[INFO] 2/2 source files have been analyzed
+[INFO] 2 source files to be analyzed
+[INFO] 2/2 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=46ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=976ms
+[INFO] Sensor PmdSensor [pmd]
+[INFO] Execute PMD 5.5.2
+[INFO] Java version: 1.8
+[INFO] PMD configuration: F:\aisinoInHome\test\target\sonar\pmd.xml
+[INFO] Execute PMD 5.5.2 (done) | time=365ms
+[INFO] Sensor PmdSensor [pmd] (done) | time=372ms
+[INFO] Sensor JaCoCo XML Report Importer [jacoco]
+[INFO] Sensor JaCoCo XML Report Importer [jacoco] (done) | time=3ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [F:\aisinoInHome\test\target\surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=54ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=224ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml]
+[WARNING] Metric 'comment_lines_data' is deprecated. Provided value is ignored.
+[INFO] Sensor XML Sensor [xml] (done) | time=69ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=11ms
+[INFO] Sensor Java CPD Block Indexer
+[INFO] Sensor Java CPD Block Indexer (done) | time=11ms
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] Calculating CPD for 2 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 66ms, dir size=51 KB
+[INFO] Analysis reports compressed in 15ms, zip size=20 KB
+[INFO] Analysis report uploaded in 191ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://127.0.0.1:9000/dashboard?id=test%3Atest
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://127.0.0.1:9000/api/ce/task?id=AXCfCHoNryHC9jkbPDF3
+[INFO] Task total time: 4.392 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.856 s
+[INFO] Finished at: 2020-03-03T14:14:58+08:00
+[INFO] ------------------------------------------------------------------------

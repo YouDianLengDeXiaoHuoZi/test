@@ -1,0 +1,1 @@
+sonar.bat > ./report/cmdLog.txt
