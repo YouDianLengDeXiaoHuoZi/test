@@ -28,7 +28,7 @@ public class Computing {
         }
         else{
             System.out.println("你的工资是：" + salary);
-            return "张三";
+            return "张三！";
         }
 
     }
